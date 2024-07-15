@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>FORM</title>
+  </head>
+
+  <body>
+
+    <fieldset>
+      <legend>Personal Info</legend>
+      <form action="mailto:darksaman71@gmail.com" method="post" enctype="text/plain">
+        <p>
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="email" placeholder="example71@gmail.com">
+
+        </p>
+
+        <p>
+
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+        </p>
+
+        <p>
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender">
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender">
+        </p>
+        <h3><i><u>Hobbies</u></i></h3>
+        <p>
+          <label for="games">Games</label>
+          <input type="checkbox" id="games" name="hobbies">
+          <label for="singing">Singing</label>
+          <input type="checkbox" id="singing" name="hobbies">
+          <label for="dancing">Dancing</label>
+          <input type="checkbox" id="dancing" name="hobbies">
+          <label for="readin">Reading</label>
+          <input type="checkbox" id="reading" name="hobbies">
+        </p>
+        <p>
+          <label for="date">Date: </label>
+          <input type="date" name="date">
+        </p>
+        <p>
+        <h3><i><b><u>Select your Country</u></b></i></h3>
+        <select name="Country" id="Country">
+          <option value="Nepal">Nepal</option>
+          <option value="Japan">Japan</option>
+          <option value="Korea">Korea</option>
+          <option value="China">China</option>
+          <option value="America">America</option>
+        </select>
+        </p>
+        <p>
+          <label for="color">Color</label>
+          <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+          <textarea name="Feedback" id="feedback" name="feedback" cols="100" rows="10" placeholder="msg">
+
+
+          </textarea>
+        </p>
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+      </form>
+    </fieldset>
+  </body>
+
+</html>
