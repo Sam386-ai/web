@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flexbox Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .header h1 {
+      color: white;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      flex: 240px;
+      margin: 10px;
+      box-sizing: border-box;
+      border: 3px solid;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .card.bono {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .card.edge {
+      background-color: #FFC107;
+      color: white;
+    }
+
+    .card.adam {
+      background-color: #DC3545;
+      color: white;
+    }
+
+    .card.larry {
+      background-color: #6C757D;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">>
+    <div class="card-container">
+      <div class="card bono">
+        <h2>Bono</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius corporis obcaecati perferendis fuga quidem ad alias debitis excepturi ipsa laudantium sapiente.</p>
+      </div>
+      <div class="card edge">
+        <h2>Edge</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius corporis obcaecati perferendis fuga quidem ad alias debitis excepturi ipsa laudantium sapiente.</p>
+      </div>
+      <div class="card adam">
+        <h2>Adam</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius corporis obcaecati perferendis fuga quidem ad alias debitis excepturi ipsa laudantium sapiente.</p>
+      </div>
+      <div class="card larry">
+        <h2>Larry</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius corporis obcaecati perferendis fuga quidem ad alias debitis excepturi ipsa laudantium sapiente.</p>
+      </div>
+      <div class="card bono">
+        <h2>Bono</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius corporis obcaecati perferendis fuga quidem ad alias debitis excepturi ipsa laudantium sapiente.</p>
+      </div>
+      <div class="card edge">
+        <h2>Edge</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius corporis obcaecati perferendis fuga quidem ad alias debitis excepturi ipsa laudantium sapiente.</p>
+      </div>
+      <div class="card adam">
+        <h2>Adam</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius corporis obcaecati perferendis fuga quidem ad alias debitis excepturi ipsa laudantium sapiente.</p>
+      </div>
+      <div class="card larry">
+        <h2>Larry</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius corporis obcaecati perferendis fuga quidem ad alias debitis excepturi ipsa laudantium sapiente.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

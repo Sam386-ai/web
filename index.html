@@ -5,68 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
 
     body {
       margin: 0;
       padding: 0;
-      background-color: white;
+      background-color: rgb(242, 242, 243);
     }
 
-    header{
-    
+    hr {
+      margin: 0;
+      border: none;
+      border-top: 3px solid black;
+    }
+
+    header {
       padding: 10px;
+      background-color: black;
+      position: sticky;
+      top: 0;
       display: flex;
       justify-content: space-between;
-      margin: 0;
-      
-      width: 3000px;
-      border: 2px solid;  
-      box-sizing: border-box;
-    
-      
-    }
-
-    .headin h1:hover{
-      text-shadow: 5px 5px 15px red, 5px 5px 5px black;
-    }
-    
-    #logo img {
-      width: 50px;
-    }
-
-    .headin {
-      display: flex;
-      justify-content: center;
       align-items: center;
-      
     }
 
+    .contact h1{
+      color: crimson;
+      padding-top: -1px;
+      font-size: 10px;
+      font-family: "Chakra Petch", sans-serif;
+      text-shadow: 5px 5px 15px red, 5px 5px 10px rgb(23, 55, 213);
+    
+
+    }
+    
     .headin h1 {
       color: crimson;
-      font-size: 45px;
-      font-family: "Chakra Petch", sans-serif;;
+      font-size: auto;
+      font-family: "Chakra Petch", sans-serif;
       margin: 0;
+      text-shadow: 5px 5px 15px red, 5px 5px 10px rgb(23, 55, 213);
+    }
+
+    .headin h1:hover {
+      text-shadow: 0 0 0 red, 0 0 0 black;
     }
   </style>
 </head>
 <body>
   <header>
-    <div id="logo">
-      <a href="https://www.roblox.com/games/10313745599/Fallen-Souls">
-        <img src="https://www.pngall.com/wp-content/uploads/1/Crown-Transparent.png" alt="Crown Logo">
-      </a>
+    <div class="headin">
+      <h1>Demon STUO</h1>
+    </div>
+    <div class="contact">
+      <h1>CONTACT</h1>
     </div>
   </header>
-
-  <div class="headin">
-    <h1>Fallen Soul</h1>
-  </div>
+  <hr>
 
   <div class="info">
-
   </div>
-
 </body>
 </html>
