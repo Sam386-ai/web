@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-        h1 {
-            font-family: "Bebas Neue", sans-serif;
-            margin: 0;
-            padding: 20px;
-            font-size: 24px;
-            color: black;
-        }
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
 
-        .p-bx {
-            height: 600px;
-            width: 900px;
-            position: relative;
-            border: 3px solid;
-        }
+      body {
+        padding: 10px;
+      }
 
-        .bx {
-            height: 200px;
-            width: 200px;
-            border: 4px solid;
-            box-sizing: border-box;
-            background-color: red;
-            border-radius: 10px;
-            border-color: antiquewhite;
-            position: relative;
-        }
+      .bx {
+        width: 450px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: repeat(3, 70px);
 
-        .bx1 {
-            background-color: rgba(93, 0, 255, 0.94);
-            top: 190px;
-            left: 195px;
-            position: absolute;
-            border: 4px solid;
-            border-color: aqua;
-        }
+      }
 
-        .bx2 {
-            background-color: rgba(0, 255, 229, 0.942);
-            top: 382px;
-            border: 4px solid;
-            left: 390px;
-            position: absolute;
-            border-color: crimson;
-        }
+      .bx1 {
+        background-color: red;
+      }
+
+      .bx2 {
+        background-color: blue;
+      }
+
+      .bx3 {
+        background-color: purple;
+      }
+
+      .bx4 {
+        background-color: yellowgreen;
+
+      }
+
+      .bx5 {
+        background-color: steelblue;
+
+
+      }
     </style>
-</head>
-<body>
-    <div class="p-bx"> 
-        <div class="bx">
-            <h1>Hello World</h1>
-        </div>
-        <div class="bx bx1">
-            <h1>Hello World</h1>
-        </div>
-        <div class="bx bx2">
-            <h1>Hello World</h1>
-        </div>
+
+  </head>
+
+  <body>
+
+    <div class="bx">
+      <div class="bx1 item">
+        <h3>Bx1</h3>
+
+      </div>
+      <div class="bx2 item">
+        <h3>Bx2</h3>
+      </div>
+      <div class="bx3 item">
+        <h3>Bx3</h3>
+      </div>
+      <div class="bx4 item">
+        <h3>Bx4</h3>
+      </div>
+      <div class="bx5 item">
+        <h3>Bx5</h3>
+      </div>
+
     </div>
-    
-</body>
+
+
+
+
+
+  </body>
+
 </html>

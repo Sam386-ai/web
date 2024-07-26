@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hmm</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        a {
+            text-decoration: none;
+            color: rgb(83, 83, 83);
+            padding-left: 30px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        :root {
+            --head-Color: red
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-right: 260px;
+            margin-left: 260px;
+        }
+
+        .nav-left {
+            display: flex;
+        }
+
+        .logo img {
+            height: 23px;
+            padding-right: 10px;
+        }
+
+        .display {
+            background-image: url('/assets/showcase.jpg');
+            background-color: #E7E7E7;
+            margin-right: 260px;
+            margin-left: 260px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-repeat: no-repeat;
+            justify-content: center;
+            background-size: cover;
+        }
+
+        .child h2 {
+            margin-top: 150px;
+        }
+
+        .child p {
+            padding: 10px 0 20px 0;
+        }
+
+        .buton button {
+            background-color: black;
+            width: 100px;
+            height: 42.25px;
+            color: white;
+            border-color: none;
+            border: none;
+            margin-top: 15px;
+        }
+
+        .buton button:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin: 20px 260px;
+        }
+
+        .products article {
+            background: #fff; 
+            padding: 20px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .products img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prod-info {
+            padding: 10px 0;
+        }
+
+        .prod-info h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+           
+        }
+
+        .prod-info p {
+            font-size: 14px;
+            margin-bottom: 10px;
+           
+        }
+
+        .btn{
+            background-color: none;
+            color: blue;
+            padding: 10px;
+            background: transparent;
+            border: none;
+            display: flex;
+        }
+        .btn h4{
+          transition: all 100ms ease-in 0ms;
+        }
+        .btn h4:hover{
+          margin-right: 10px;
+          cursor: pointer;
+        }
+
+        .btn i{
+          transition: all 100ms ease-in 0ms;
+          margin-top: 4px;
+          margin-left: 4px;
+        }
+
+        .btn i:hover{
+          margin-left: 10px;
+          cursor: pointer;
+          
+        }
+
+        .xbox{
+          background-image: url(assets/xbox.png);
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          padding-left: 40px;
+          background-repeat: no-repeat;
+          height: 310px;
+          margin-right: 260px;
+          margin-left: 260px;
+        }
+
+        .xbox-info{
+          width:50%;
+        }
+
+        .xbox-info p {
+        padding: 20px 0;
+        line-height: 1.4rem;
+        font-size: 17px;
+      }
+
+      .xbox-info button{
+        background-color: black;
+            width: 100px;
+            height: 42.25px;
+            color: white;
+            border-color: none;
+            border: none;
+            margin-top: 15px;
+      }
+
+      .xbox-info button:hover{
+        opacity: 0.8;
+      }
+
+        .Carbon{
+          background-image: url(assets/carbon.jpg);
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          padding-left: 40px;
+          background-repeat: no-repeat;
+          height: 320px;
+          margin-right: 260px;
+          margin-left: 260px;
+        
+        }
+
+        .Carbon-info{
+          width:50%;
+          color: white;
+          margin-top: 50px;
+        }
+
+        .Carbon-info p {
+        padding: 20px 0;
+        line-height: 1.4rem;
+        font-size: 17px;
+      }
+
+      .Carbon-info button{
+        background-color: rgb(255, 255, 255);
+            width: 100px;
+            height: 42.25px;
+            color: rgb(0, 0, 0);
+            border-color: none;
+            border: none;
+            margin-top: 15px;
+      }
+
+      .Carbon-info button:hover{
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    
+      .media{
+        display: flex;
+    align-items: center;
+    margin: 20px 260px;
+      }
+
+      .icons {
+    display: flex;
+    margin-right: 260px;
+    margin-left: 260px;
+    margin-top: 20px;
+}
+
+.icons p{
+    margin-top: 4px;
+    margin-right: -10px;
+}
+
+
+.info{
+    height: 390px;
+    margin-top: 20px;
+    background-color: #F2F2F2;
+}
+  
+.links-inner{
+    display: flex;
+    justify-content: space-between ;
+    margin-bottom: 10;
+    margin-right: 260px;
+    margin-left: 260px;
+    
+}
+
+.links-inner h3{
+            margin-top  : 40px;
+            font-size: 15px;
+            color: #616161cf;
+}
+
+.links-inner p{
+            margin-top  : 20px;
+            font-size: 13px;
+            opacity: 0.8;
+            cursor: pointer;
+}
+
+
+
+.mics {
+    display: flex;
+    background-color: #F2F2F2;
+    margin-right: 260px;
+    margin-left: 260px;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center; 
+    cursor: pointer;
+}
+
+ .mics p{
+    color: #616161cf;
+    font-size: 14px;
+    justify-content: space-between;
+    padding-bottom: 100px;
+ }
+
+
+.foot{
+        background-color: #F2F2F2;
+        
+
+}
+  
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="">
+            </div>
+            <nav>
+                <a href="">Office</a>
+                <a href="">Windows</a>
+                <a href="">Xbox</a>
+                <a href="">Surface</a>
+                <a href="">Deals</a>
+                <a href="">Support</a>
+            </nav>
+        </div>
+        <div class="head-icons">
+            <i class="fa-solid fa-magnifying-glass "></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+
+    <div class="display">
+        <div class="child">
+            <h2>Surface Deals</h2>
+            <p>Select Surfaces are on sale now - save while supplies last</p>
+        </div>
+        <div class="buton">
+            <button>Shop Now
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- products -->
+    <main>
+        <section class="products">
+            <article>
+                <img src="/assets/card1.png" alt="">
+                <div class="prod-info">
+                    <h1>New Surface Pro 7</h1>
+                    <p>See how Katie Sowers, Asst. Coach for the 49ers, uses Surface Pro 7 to put her plans into play.</p>
+                   <div class="btn">
+                    <h4>LEARN MORE</h4>
+                    <i class="fa-solid fa-chevron-right"></i>
+                   </div>
+                </div>
+            </article>
+            <article>
+                <img src="/assets/card2.png" alt="">
+                <div class="prod-info">
+                    <h1>New Surface Laptop 3</h1>
+                    <p>Express yourself powerfully with a thin, light, and elegant design, faster performance, and up to
+                        11.5 hours battery life.</p>
+                        <div class="btn">
+                          <h4>LEARN MORE</h4>
+                          <i class="fa-solid fa-chevron-right"></i>
+                         </div>
+                </div>
+            </article>
+            <article>
+                <img src="/assets/card3.png" alt="">
+                <div class="prod-info">
+                    <h1>Save $150 + free controller</h1>
+                    <p>Buy an Xbox One X console and double your fun with a free select extra controller. Starting at
+                        $349.</p>
+                        <div class="btn">
+                          <h4>LEARN MORE</h4>
+                          <i class="fa-solid fa-chevron-right"></i>
+                         </div>
+                </div>
+            </article>
+            <article>
+                <img src="/assets/card4.png" alt="">
+                <div class="prod-info">
+                    <h1>The new Microsoft Edge</h1>
+                    <p>Expect more. World class performance, with more privacy, more productivity, and more value.</p>
+                    <div class="btn">
+                      <h4>LEARN MORE</h4>
+                      <i class="fa-solid fa-chevron-right"></i>
+                     </div>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="xbox">
+            <div class="xbox-info">
+              <h3>Xbox Game Pass Ultimate</h3>
+              <p>Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality console and PC games. Play together with friends and discover your next favorite game.</p>
+                <button>Shop Now
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            
+            </div>
+
+        </section>
+
+
+        <section class="products">
+            <article>
+                <img src="/assets/card5.png" alt="">
+                <div class="prod-info">
+                    <h1>Microsoft Teams</h1>
+                    <p>Unleash the power of your team.</p>
+                   <div class="btn">
+                    <h4>LEARN MORE</h4>
+                    <i class="fa-solid fa-chevron-right"></i>
+                   </div>
+                </div>
+            </article>
+            <article>
+                <img src="/assets/card6.jpg" alt="">
+                <div class="prod-info">
+                    <h1>Unlock the power of learning</h1>
+                    <p>Get students future-ready with Windows 10 devices. Starting at $219.</p>
+                        <div class="btn">
+                          <h4>LEARN MORE</h4>
+                          <i class="fa-solid fa-chevron-right"></i>
+                         </div>
+                </div>
+            </article>
+            <article>
+                <img src="/assets/card7.png" alt="">
+                <div class="prod-info">
+                    <h1>Windows 10 Enterprise</h1>
+                    <p>Download the free 90-day evaluation for IT professionals.</p>
+                        <div class="btn">
+                          <h4>LEARN MORE</h4>
+                          <i class="fa-solid fa-chevron-right"></i>
+                         </div>
+                </div>
+            </article>
+            <article>
+                <img src="/assets/card8.png" alt="">
+                <div class="prod-info">
+                    <h1>Explore Kubernetes</h1>
+                    <p>Learn how Kubernetes works and get started with cloud native app development today.</p>
+                    <div class="btn">
+                      <h4>LEARN MORE</h4>
+                      <i class="fa-solid fa-chevron-right"></i>
+                     </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="Carbon">
+            <div class="Carbon-info">
+              <h3>Commiting To Carbon Negative</h3>
+              <p>Microsoft will be carbon negative by 2030 and by 2050 we will remove all carbon the company has emitted since it was founded in 1975</p>
+                <button>Learn More
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="Media">
+            <div class="icons">
+                <p>Follow Microsoft</p>
+               <a href="https://www.facebook.com/"><img src="assets/social-fb.png" alt=""></a>
+                <a href="https://twitter.com/"><img src="assets/social-twitter.png" alt=""></a>
+               <a href="https://www.linkedin.com/"><img src="assets/social-linkedin.png" alt=""></a>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="links-inner">
+                <div class="New">
+                    <h3>What's New</h3>
+                    <p>Surface Pro X</p>
+                    <p>Surface Laptop 3</p>
+                    <p>Surface Pro 7</p>
+                    <p>Windows 10 apps</p>
+                    <p>Office apps</p>
+                </div>
+                <div class="Store">
+                    <h3>Microsoft Store</h3>
+                    <p>Account Profile</p>
+                    <p>Download Center</p>
+                    <p>Microsoft Store Support</p>
+                    <p>Returns</p>
+                    <p>Older tracking</p>
+                </div>
+                <div class="Edu">
+                    <h3>Education</h3>
+                    <p>Microsoft in education</p>
+                    <p>Office for students</p>
+                    <p>Office 365 for schools</p>
+                    <p>Deals for students</p>
+                    <p>Microsoft Azure</p>
+                </div>
+                <div class="Ent">
+                    <h3>Enterprise</h3>
+                    <p>Azure</p>
+                    <p>AppSource</p>
+                    <p>Automotive</p>
+                    <p>Government</p>
+                    <p>HealthCare</p>
+                </div>
+                <div class="Dev">
+                    <h3>Developer</h3>
+                    <p>Visual Studio</p>
+                    <p>Windows Dev Center</p>
+                    <p>Developer Network</p>
+                    <p>TechNet</p>
+                    <p>Microsoft Developer</p>
+                </div>
+                <div class="Com">
+                    <h3>Company</h3>
+                    <p>Careers</p>
+                    <p>About Microsoft</p>
+                    <p>Company News</p>
+                    <p>Privacy at Microsoft</p>
+                    <p>Investors</p>
+                </div>
+        </section>
+<section class="foot">
+    <div class="mics">
+        <p><i class="fa-solid fa-globe fa-2xl"></i>English (United States)</p>
+        <p>Sitemap</p>
+        <p>Contact Microsoft</p>
+        <p>Privacy & Cookies</p>
+        <p>Terms of use</p>
+        <p>TradeMarks</p>
+        <p>Safety & eco</p>
+        <p>About our ads</p>
+        <p>Microsoft 2020</p>
+    </div>
+</section>
+    </main>
+</body>
+
+</html>
